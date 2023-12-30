@@ -14,7 +14,7 @@ public class Box {
     }
 
     public double calculatePrice(){
-        double sum=objectList.stream().mapToDouble(object::getPrice()).sum();
+        double sum=objectList.stream().mapToDouble(Object::getPrice()).sum();
         for(Box box:boxList){
             sum=+box.calculatePrice();
         }
